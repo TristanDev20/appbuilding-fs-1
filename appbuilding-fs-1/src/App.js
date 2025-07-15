@@ -25,7 +25,7 @@ function App() {
     const token = localStorage.getItem('token');
       if (!token) return; 
 
-      fetch(`https://fitnessapp-api-ln8u.onrender.com/`, {
+      fetch(`https://fitnessapp-api-ln8u.onrender.com/users/details`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
